@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yafri Timeslot Selection Screen</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <div class="circle"></div>
+        <h1>Yafri FM</h1>
+    </div>
+    <div class="role">DJ Role</div>
+    <button class="user-button">DJ FELIBOX</button>
+</header>
+
+            <div class = "container">
+            <nav class="sidebar">
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button> 
+                <ul id="barcontent">
+                    <li><a href="maindj.html"><button class="nav-btn">Main Menu</button></a></li>
+                    <li><a href="timeslot.html"><button class="nav-btnN">Select Timeslot</button></a></li>
+                    <li><a href="searchsongs.html"><button class="nav-btn">Search Songs</button></a></li>
+                    <li><a href="currentplaylist.html"><button class="nav-btn">Current Playlist</button></a></li>
+                    <li><button class="nav-btn">Previous Playlists</button></li>
+                 </ul>
+            </nav>
+            <main>
+                <section class="TimeSlot">
+                    <h2> Time Slot Selection  </h2>
+                </section>
+
+                <section class = "Calendar">
+                    <table id= "Calendar">
+                        <thead>
+                            <tr>
+                                <th>Hours</th>
+                                <th>Monday</th>
+                                <th>Tuesday</th>
+                                <th>Wednesday</th>
+                                <th>Thursday</th>
+                                <th>Friday</th>
+                                <th>Saturday</th>
+                                <th>Sunday</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <tr>
+                                    <td>08:00</td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                </tr>
+                                <tr>
+                                    <td>09:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                </tr>
+                                <tr>
+                                    <td>10:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                </tr>
+                                <tr>
+                                    <td>11:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                </tr>
+                                <tr>
+                                    <td>12:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                </tr>
+                                <tr>
+                                    <td>13:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                </tr>
+                                <tr>
+                                    <td>14:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                </tr>
+                                <tr>
+                                    <td>15:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                </tr>
+                                <tr>
+                                    <td>16:00</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="occupied">Occupied</td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                    <td class="selectable"></td>
+                                </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="SearchDate">
+                    <div class = "title">Look for a time slot:</div>
+                    
+                    <form id="search-form">
+                        <label for="day">Select Day:</label>
+                        <select id="day" name="day" required>
+                            <option value="" disabled selected>Select day</option>
+                            <option value="Monday">Monday</option>
+                            <option value="Tuesday">Tuesday</option>
+                            <option value="Wednesday">Wednesday</option>
+                            <option value="Thursday">Thursday</option>
+                            <option value="Friday">Friday</option>
+                            <option value="Saturday">Saturday</option>
+                            <option value="Sunday">Sunday</option>
+                        </select>
+                    
+                        <label for="time">Select Time:</label>
+                        <select id="time" name="time" required>
+                            <option value="" disabled selected>Select time</option>
+                            <option value="08:00">08:00</option>
+                            <option value="09:00">09:00</option>
+                            <option value="10:00">10:00</option>
+                            <option value="11:00">11:00</option>
+                            <option value="12:00">12:00</option>
+                            <option value="13:00">13:00</option>
+                            <option value="14:00">14:00</option>
+                            <option value="15:00">15:00</option>
+                            <option value="16:00">16:00</option>
+                        </select>
+                    
+                        <button type="submit">Search</button>
+                    </form>
+                    
+                </section>
+
+                <section class="CurrentSong">
+                    <div class="song-info">
+                        <div class="controls">
+                            <button>&lt;&lt;</button>
+                            <button id="play">||</button>
+                            <button>&gt;&gt;</button> 
+                        </div>
+                        <div class="SongTitle">
+                        <p>Una Vaina Loca - Fuego</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div> 
+                    </div>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </footer>
+    </body>
+   <script src="timeslot.js"></script>
+</html>

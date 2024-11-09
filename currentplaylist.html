@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yafri DJ Main Interface</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <div class="circle"></div>
+        <h1>Yafri FM</h1>
+    </div>
+    <div class="role">DJ Role</div>
+    <button class="user-button"> DJ FELIBOX</button>
+</header>
+
+        <div class = "container">
+            <nav class="sidebar">
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button> 
+                <ul id="barcontent">
+                    <li><a href="maindj.html"><button class="nav-btn">Main Menu</button></a></li>
+                    <li><a href="timeslot.html"><button class="nav-btn">Select Timeslot</button></a></li>
+                    <li><a href="searchsongs.html"><button class="nav-btn">Search Songs</button></a></li>
+                    <li><a href="currentplaylist.html"><button class="nav-btnN">Current Playlist</button></a></li>
+                    <li><button class="nav-btn">Previous Playlists</button></li>
+                 </ul>
+            </nav>
+
+            <main>
+
+                <section class="CurrentPlaylist">
+                    <h2> CurrentPlaylist </h2>
+                </section>
+                
+                <section class="Playlist2">
+                    <div class = "title">Your Current Playlist: Reggaeton Antiguo</div>
+                    <div class = "Playlistlist">
+                    <ol>
+                        <li>Dale Don Dale - Don Omar</li>
+                        <li>Fanática Sensual - Plan B</li>
+                        <li>Gasolina - Daddy Yankee</li>
+                        <li>Una Vaina Loca- Fuego</li>
+                        <li>Limbo - Daddy Yankee</li>
+                        <li>Me Rehúso - Danny Ocean</li>
+                        <li>Angelito Sin Alas -DCS, Juan Magán</li>
+                        <li>El Mambo - Kiko Rivera</li>
+                    </ol>
+                    </div>
+                </section>
+                
+
+                <section class="playlist-summary-and-search">
+                    
+                    <div class="playlist-summary">
+                        <div class = "title"> Playlist Summary</div>
+                        <p><strong>Genre:</strong> Reggaeton</p>
+                        <p><strong>Total Minutes:</strong> 45 mins</p>
+                        <p><strong>Total Listeners:</strong> 1200 </p>
+                        <div class = "playlist-image-section">
+                            <img src="images\playlist.jpeg" alt="Playlist Image" class="playlist-image">
+                        </div>
+                    </div>
+                
+                    
+                    <div class="playlist-search-remove">
+                        <div class = "title">Remove a Song:</div>
+                        <input type="text" id="search-remove" placeholder="Search a song..." maxlength="100" class="search-input">
+                        <button id="remove-song" class="remove-button">Remove Song</button>
+                        <div class = "remove-image-section">
+                        <img src="images\gasolina.jpeg" alt="Remove Image" class="remove-image">
+                        </div>
+                    </div>
+                </section>
+
+                <section class="CurrentSong">
+                    <div class="song-info">
+                        <div class="controls">
+                            <button>&lt;&lt;</button>
+                            <button id="play">||</button>
+                            <button>&gt;&gt;</button> 
+                        </div>
+                        <div class="SongTitle">
+                        <p>Me Rehúso - Danny Ocean</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div> 
+                    </div>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </footer>
+        <script   src="currentplaylist.js"></script>
+
+    </body>
+   
+</html>

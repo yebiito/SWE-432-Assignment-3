@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Yafri DJ Main Interface</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <div class="circle"></div>
+        <h1>Yafri FM</h1>
+    </div>
+    <div class="role">DJ Role</div>
+    <button class="user-button">DJ FELIBOX</button>
+</header>
+
+        <div class = "container">
+            <nav class="sidebar" > 
+                <button class="toggle-btn" onclick="toggleSidebar()">☰</button>
+
+                <ul id="barcontent">
+                    <li><a href="maindj.html"><button class="nav-btnN">Main Menu</button></a></li>
+                    <li><a href="timeslot.html"><button class="nav-btn">Select Timeslot</button></a></li>
+                    <li><a href="searchsongs.html"><button class="nav-btn">Search Songs</button></a></li>
+                    <li><a href="currentplaylist.html"><button class="nav-btn">Current Playlist</button></a></li>
+                    <li><button class="nav-btn">Previous Playlists</button></li>
+                 </ul>
+            </nav>
+            <main>
+                <section class="MainMenu">
+                    <h2> Main Menu </h2>
+                </section>
+
+              <section class="DJ">
+                    <h2>DJ Felibox</h2>
+                    <img src="images\djimage.jpg" alt="DJ Yafri" class="dj-image">
+              </section>
+
+                <section class="Playlist">
+                    <div class = "title">Your Current Playlist: Reggaeton Antiguo</div>
+                    <div class = "Playlistlist">
+                    <ol>
+                        <li>Dale Don Dale - Don Omar</li>
+                        <li>Fanática Sensual - Plan B</li>
+                        <li>Gasolina - Daddy Yankee</li>
+                        <li>Una Vaina Loca- Fuego</li>
+                        <li>Limbo - Daddy Yankee</li>
+                        <li>Me Rehúso - Danny Ocean</li>
+                        <li>Angelito Sin Alas -DCS, Juan Magán</li>
+                        <li>El Mambo - Kiko Rivera</li>
+                    </ol>
+                    </div>
+                </section>
+
+                <section class="CurrentSong">
+                    <div class="song-info">
+                        <div class="controls">
+                            <button>&lt;&lt;</button>
+                            <button id = "play">||</button>
+                            <button>&gt;&gt;</button> 
+                        </div>
+                        <div class="SongTitle">
+                        <p>Dale Don Dale - Don Omar</p>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <div class="progress"></div> 
+                    </div>
+            </main>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Terms and Conditions</a></li>
+            </ul>
+        </footer>
+     </body>
+    <script src="djwebsite.js"></script>
+</html>
